@@ -1,0 +1,48 @@
+body {
+    background-color: #eee;
+    font-family: sans;
+}
+
+.neoputt-wrap {
+    background-position: center 8px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    user-select: none;
+}
+
+.neoputt-heading {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+                 1px 1px 0 #fff;
+}
+
+.neoputt-buttons button {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 4px;
+    opacity: 0.8;
+}
+
+.neoputt-buttons button:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.neoputt-small {
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+                 1px 1px 0 #000;
+}
+
+.neoputt-field {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+    outline: 1px solid #000;
+}

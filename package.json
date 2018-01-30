@@ -1,0 +1,30 @@
+{
+  "name": "neoputt",
+  "version": "1.0.0",
+  "description": "multiplayer minigolf simulator",
+  "main": "index.js",
+  "scripts": {
+    "build-js": "browserify index.js -o index.bundle.js",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misterhat/neoputt.git"
+  },
+  "keywords": [
+    "mini",
+    "golf",
+    "putt",
+    "minigolf"
+  ],
+  "author": "Mister Hat <misterhat144@gmail.com>",
+  "license": "AGPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/misterhat/neoputt/issues"
+  },
+  "homepage": "https://github.com/misterhat/neoputt#readme",
+  "dependencies": {
+    "hyperscript": "^2.0.2",
+    "node-emoji": "^1.8.1"
+  }
+}
