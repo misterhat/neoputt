@@ -1,6 +1,5 @@
 const config = require('./config');
-
-const TitleState = require('./lib/states/title');
+const states = require('./lib/states');
 
 // TO ANGLE: * 180 / Math.PI
 
@@ -14,12 +13,15 @@ class NeoPutt {
         this.tickWrap = () => this.tick();
     }
 
-    setState(state) {
+    setState(state, args = []) {
         if (this.state) {
             this.state.end();
         }
 
-        this.state = state;
+        args.unshift(this);
+        args.unshift(null);
+
+        this.state = new (Function.prototype.bind.apply(states[state], args));
         this.state.start();
     }
 
@@ -30,7 +32,7 @@ class NeoPutt {
     }
 
     start() {
-        this.setState(new TitleState(this));
+        this.setState('title');
         this.tick();
     }
 }
