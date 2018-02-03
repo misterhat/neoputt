@@ -1,6 +1,5 @@
 body {
     background-color: #eee;
-    font-family: sans;
 }
 
 .neoputt-wrap {
@@ -8,8 +7,10 @@ body {
     -webkit-user-select: none;
     background-position: center 8px;
     background-repeat: no-repeat;
+    font-family: sans;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
     position: relative;
     text-align: center;
     user-select: none;
@@ -23,29 +24,32 @@ body {
 .neoputt-button, .neoputt-input {
     background-color: #fff;
     border-radius: 4px;
-    border: 2px solid #000;
+    border: 1px solid #555;
     color: #000;
-    margin: 4px;
-    opacity: 0.8;
-    padding: 0 4px 0 4px;
     height: 32px;
+    line-height: 16px;
+    margin: 2px;
+    opacity: 0.8;
+    padding: 2px;
 }
 
 .neoputt-button::-moz-focus-inner {
     border: 0;
 }
 
-.neoputt-button:hover, .neoputt-button:focus {
+.neoputt-button:hover, .neoputt-button:focus, .neoputt-button-f {
+    border-color: #000;
     cursor: pointer;
     opacity: 1;
+    outline: none;
 }
 
 .neoputt-input {
     width: 128px;
-    margin: 0;
+    height: 28px;
 }
 
-.neoputt-small {
+.neoputt-small, .neoputt-map-name {
     color: #fff;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
                  1px 1px 0 #000;
@@ -57,25 +61,91 @@ body {
     outline: 1px solid #000;
 }
 
-.neoputt-maps {
+.neoputt-box {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 4px;
-    border: 1px solid #000;
-    width: 100%;
+    border: 1px solid #555;
     overflow-y: scroll;
+    width: 99%;
 }
 
-.map {
+.neoputt-map {
+    background-color: #0b0;
     border: 1px solid #000;
     display: inline-block;
     height: 88px;
-    width: 128px;
+    line-height: 88px;
     margin: 4px;
-    background-color: #0b0;
     opacity: 0.5;
+    text-align: center;
+    vertical-align: middle;
+    width: 120px;
+    padding: 0 4px 0 4px;
 }
 
-.map:hover {
+.neoputt-map:hover {
     cursor: pointer;
     opacity: 1;
+}
+
+.neoputt-map-name {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.neoputt-edit-back {
+    bottom: 8px;
+    height: 48px;
+    position: absolute;
+    right: 9px;
+}
+
+.neoputt-edit-test {
+    bottom: 8px;
+    height: 48px;
+    left: 9px;
+    position: absolute;
+}
+
+.neoputt-toolbox {
+    background-color: #ddd;
+    border: 1px solid transparent;
+    margin-bottom: 1px;
+    overflow-y: hidden;
+    padding: 1px;
+    text-align: left;
+}
+
+.neoputt-tools {
+    float: left;
+}
+
+.neoputt-tiles {
+    background-color: #bbb;
+    float: right;
+    height: 100%;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.neoputt-tile {
+    display: inline-block;
+    margin: 4px;
+    outline: 1px solid #555;
+}
+
+.neoputt-tile:hover {
+    cursor: pointer;
+    outline-color: #000;
+    outline-width: 2px;
+}
+
+.neoputt-editor {
+    cursor: crosshair;
+    margin-top: 1px;
+}
+
+.neoputt-clear {
+    clear: both;
 }
