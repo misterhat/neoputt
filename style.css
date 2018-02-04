@@ -28,9 +28,9 @@ body {
     color: #000;
     height: 32px;
     line-height: 16px;
-    margin: 2px;
+    margin: 2px 4px 2px 4px;
     opacity: 0.8;
-    padding: 2px;
+    padding: 2px 4px 2px 4px;
 }
 
 .neoputt-button::-moz-focus-inner {
@@ -42,6 +42,11 @@ body {
     cursor: pointer;
     opacity: 1;
     outline: none;
+    z-index: 9999;
+}
+
+.neoputt-button:hover, .neoputt-tile:hover {
+    transform: scale(1.1);
 }
 
 .neoputt-input {
@@ -58,7 +63,6 @@ body {
 .neoputt-field {
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
-    outline: 1px solid #000;
 }
 
 .neoputt-box {
@@ -66,7 +70,7 @@ body {
     border-radius: 4px;
     border: 1px solid #555;
     overflow-y: scroll;
-    width: 99%;
+    margin: 4px;
 }
 
 .neoputt-map {
@@ -78,7 +82,6 @@ body {
     margin: 4px;
     opacity: 0.5;
     text-align: center;
-    vertical-align: middle;
     width: 120px;
     padding: 0 4px 0 4px;
 }
@@ -92,6 +95,9 @@ body {
     display: inline-block;
     line-height: normal;
     vertical-align: middle;
+}
+
+.neoputt-map-delete {
 }
 
 .neoputt-edit-back {
@@ -138,7 +144,6 @@ body {
 .neoputt-tile:hover {
     cursor: pointer;
     outline-color: #000;
-    outline-width: 2px;
 }
 
 .neoputt-editor {
