@@ -1,21 +1,20 @@
 const config = require('./config');
+const h = require('hyperscript');
 const states = require('./lib/states');
 
 // TO ANGLE: * 180 / Math.PI
 
 class NeoPutt {
     constructor() {
-        this.dom = document.createElement('div');
-        this.dom.className = 'neoputt-wrap';
-
         const width = (config.tileSize * config.width);
         const height = (config.tileSize * config.height);
 
-        this.dom.style.width = width + 'px';
-        this.dom.style.height = height + 'px';
-        this.dom.style.left = 'calc(50% - ' + (width / 2) + 'px)';
-        this.dom.style.top = 'calc(50% - ' + (height / 2) + 'px)';
-        this.dom.style.transform = 'scale(2)';
+        this.dom = h('.neoputt-wrap', {
+            style: {
+                width: width + 'px',
+                height: height + 'px'
+            }
+        });
 
         this.tickWrap = () => this.tick();
     }

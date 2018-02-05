@@ -4,7 +4,8 @@
   "description": "multiplayer minigolf simulator",
   "main": "index.js",
   "scripts": {
-    "build-js": "browserify index.js -o index.bundle.js",
+    "clean": "rm build/*",
+    "build-js": "browserify index.js -o build/index.bundle.js",
     "test": "node test"
   },
   "repository": {
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/misterhat/neoputt#readme",
   "dependencies": {
+    "deep-diff": "^0.3.8",
     "hyperscript": "^2.0.2",
     "lzwcompress": "^0.2.4",
     "node-emoji": "^1.8.1"

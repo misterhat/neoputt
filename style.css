@@ -3,13 +3,16 @@ body {
 }
 
 .neoputt-wrap {
+    transition: background-image 0.3s;
     -moz-user-select: none;
     -webkit-user-select: none;
-    background-position: center 8px;
+    background-position: center 0;
     background-repeat: no-repeat;
     font-family: sans;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
-    position: absolute;
+    position: relative;
     text-align: center;
     user-select: none;
 }
@@ -47,6 +50,14 @@ body {
     transform: scale(1.1);
 }
 
+.neoputt-button:disabled, .neoputt-input:disabled {
+    border-color: #555;
+    color: #555;
+    cursor: not-allowed;
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
 .neoputt-input {
     width: 128px;
     height: 28px;
@@ -72,7 +83,7 @@ body {
 }
 
 .neoputt-map {
-    background-color: #0b0;
+    background-size: contain;
     border: 1px solid #000;
     display: inline-block;
     height: 88px;
@@ -83,6 +94,7 @@ body {
     position: relative;
     text-align: center;
     width: 120px;
+    transition: linear transform 0.3s;
 }
 
 .neoputt-map:hover {
