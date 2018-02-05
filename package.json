@@ -25,6 +25,7 @@
   "homepage": "https://github.com/misterhat/neoputt#readme",
   "dependencies": {
     "hyperscript": "^2.0.2",
+    "lzwcompress": "^0.2.4",
     "node-emoji": "^1.8.1"
   }
 }

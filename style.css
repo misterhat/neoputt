@@ -8,10 +8,8 @@ body {
     background-position: center 8px;
     background-repeat: no-repeat;
     font-family: sans;
-    margin-left: auto;
-    margin-right: auto;
     overflow: hidden;
-    position: relative;
+    position: absolute;
     text-align: center;
     user-select: none;
 }
@@ -81,9 +79,10 @@ body {
     line-height: 88px;
     margin: 4px;
     opacity: 0.5;
+    padding: 0 4px 0 4px;
+    position: relative;
     text-align: center;
     width: 120px;
-    padding: 0 4px 0 4px;
 }
 
 .neoputt-map:hover {
@@ -97,7 +96,12 @@ body {
     vertical-align: middle;
 }
 
-.neoputt-map-delete {
+.neoputt-map-del {
+    bottom: 8px;
+    line-height: 16px;
+    position: absolute;
+    right: 8px;
+    font-size: 16px;
 }
 
 .neoputt-edit-back {

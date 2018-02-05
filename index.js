@@ -7,8 +7,15 @@ class NeoPutt {
     constructor() {
         this.dom = document.createElement('div');
         this.dom.className = 'neoputt-wrap';
-        this.dom.style.width = (config.tileSize * config.width) + 'px';
-        this.dom.style.height = (config.tileSize * config.height) + 'px';
+
+        const width = (config.tileSize * config.width);
+        const height = (config.tileSize * config.height);
+
+        this.dom.style.width = width + 'px';
+        this.dom.style.height = height + 'px';
+        this.dom.style.left = 'calc(50% - ' + (width / 2) + 'px)';
+        this.dom.style.top = 'calc(50% - ' + (height / 2) + 'px)';
+        this.dom.style.transform = 'scale(2)';
 
         this.tickWrap = () => this.tick();
     }
