@@ -118,7 +118,7 @@ body {
 
 .neoputt-edit-back {
     bottom: 8px;
-    height: 48px;
+    height: auto;
     position: absolute;
     right: 9px;
 }
