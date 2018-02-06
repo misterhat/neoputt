@@ -2,10 +2,10 @@
   "name": "neoputt",
   "version": "1.0.0",
   "description": "multiplayer minigolf simulator",
-  "main": "index.js",
+  "main": "browser.js",
   "scripts": {
     "clean": "rm build/*",
-    "build-js": "browserify index.js -o build/index.bundle.js",
+    "build-js": "browserify browser.js -o build/browser.bundle.js",
     "test": "node test"
   },
   "repository": {

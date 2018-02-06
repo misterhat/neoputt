@@ -19,6 +19,7 @@
             "error",
             "unix"
         ],
+        "max-len": 2,
         "quotes": [
             "error",
             "single"
