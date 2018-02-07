@@ -6,7 +6,7 @@ body {
     transition: background-image 0.3s;
     -moz-user-select: none;
     -webkit-user-select: none;
-    background-position: center 0;
+    background-position: center 8px;
     background-repeat: no-repeat;
     font-family: sans;
     margin-left: auto;
@@ -116,6 +116,11 @@ body {
     font-size: 16px;
 }
 
+.neoputt-edit-coords {
+    left: 4px;
+    position: absolute;
+}
+
 .neoputt-edit-back {
     bottom: 8px;
     height: auto;
@@ -154,12 +159,13 @@ body {
 .neoputt-tile {
     display: inline-block;
     margin: 4px;
-    outline: 1px solid #555;
+    /*outline: 1px solid #555;*/
 }
 
 .neoputt-tile:hover {
     cursor: pointer;
-    outline-color: #000;
+    outline: 1px dashed #000;
+    transform: scale(1.2);
 }
 
 .neoputt-editor {

@@ -25,11 +25,15 @@
   },
   "homepage": "https://github.com/misterhat/neoputt#readme",
   "dependencies": {
+    "csrf": "^3.0.6",
     "deep-diff": "^0.3.8",
+    "ecstatic": "^3.2.0",
     "hyperscript": "^2.0.2",
     "knex": "^0.14.2",
     "lzwcompress": "^0.2.4",
-    "node-emoji": "^1.8.1"
+    "node-emoji": "^1.8.1",
+    "preloader": "^4.0.2",
+    "tcp-bind": "^1.2.0"
   },
   "devDependencies": {
     "browserify": "^15.2.0"

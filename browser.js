@@ -1,5 +1,7 @@
+const assets = require('./assets');
 const config = require('./config');
 const h = require('hyperscript');
+const preloader = require('preloader');
 const states = require('./lib/states');
 
 // TO ANGLE: * 180 / Math.PI
@@ -37,9 +39,21 @@ class NeoPutt {
         setTimeout(this.tickWrap, 100);
     }
 
-    start() {
-        this.setState('title');
-        this.tick();
+    start(done) {
+        const loader = preloader({});
+
+        assets.forEach(loader.add.bind(loader));
+
+        loader.on('complete', () => {
+            this.setState('title');
+            this.tick();
+
+            if (typeof done === 'function') {
+                done();
+            }
+        });
+
+        loader.load();
     }
 }
 
