@@ -1,6 +1,13 @@
 # neoputt
 a web-based multiplayer minigolf simulator.
 
+## credits
+
+* [`./img/acid.png` Sev - OpenClipArt](https://openclipart.org/detail/211412/splat)
+* [`./img/grass.png` Sharm - OpenGameArt](https://opengameart.org/content/tiny-16-basic)
+* [`./img/sand.png` Sharm - OpenGameArt](https://opengameart.org/content/tiny-16-basic)
+* [`./img/brick.png` SpiderDave - OpenGameArt](https://opengameart.org/content/bricks-tilable)
+
 ## license
 Copyright (C) 2018 Mister Hat
 

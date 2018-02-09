@@ -166,7 +166,7 @@ body {
 .neoputt-tile:hover, .neoputt-tile-f {
     cursor: pointer;
     outline: 1px dashed #000;
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 .neoputt-editor {
