@@ -43,7 +43,7 @@ body {
     cursor: pointer;
     opacity: 1;
     outline: none;
-    z-index: 9999;
+    z-index: 9998;
 }
 
 .neoputt-button:hover, .neoputt-tile:hover {
@@ -132,7 +132,7 @@ body {
 
 .neoputt-edit-test {
     bottom: 8px;
-    height: 48px;
+    height: auto;
     left: 9px;
     position: absolute;
 }
@@ -160,6 +160,10 @@ body {
 
 .neoputt-tile {
     display: inline-block;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimizeSpeed;
+    image-rendering: pixelated;
     margin: 4px;
 }
 
@@ -172,6 +176,7 @@ body {
 .neoputt-editor {
     cursor: crosshair;
     margin-top: 1px;
+    z-index: 9999;
 }
 
 .neoputt-clear {
