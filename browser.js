@@ -36,7 +36,7 @@ class NeoPutt {
     tick() {
         this.state.tick();
         this.state.draw();
-        setTimeout(this.tickWrap, 100);
+        setTimeout(this.tickWrap, 1000 / config.fps);
     }
 
     start(done) {
@@ -60,3 +60,12 @@ class NeoPutt {
 const game = new NeoPutt();
 document.body.appendChild(game.dom);
 game.start();
+
+if (localStorage.getItem('neoputt-maps')) {
+    const delMaps = h('button', 'delete maps');
+    delMaps.addEventListener('click', () => {
+        localStorage.setItem('neoputt-maps', '');
+        window.location.reload(false);
+    }, false);
+    document.body.appendChild(delMaps);
+}

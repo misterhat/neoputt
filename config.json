@@ -1,5 +1,6 @@
 {
     "tileSize": 16,
     "width": 28,
-    "height": 18
+    "height": 18,
+    "fps": 20
 }
