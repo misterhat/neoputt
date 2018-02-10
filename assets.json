@@ -1,9 +1,15 @@
 [
     "/img/acid.png",
+    "/img/blue-portal.png",
     "/img/brick.png",
+    "/img/bumper.png",
     "/img/grass.png",
     "/img/ice.png",
+    "/img/lava.png",
     "/img/magnet.png",
+    "/img/pink-portal.png",
+    "/img/red-portal.png",
     "/img/sand.png",
-    "/img/water.png"
+    "/img/water.png",
+    "/img/yellow-portal.png"
 ]
