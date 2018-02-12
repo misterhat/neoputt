@@ -1,14 +1,1 @@
-[
-    "/img/acid.png",
-    "/img/blue-portal.png",
-    "/img/brick.png",
-    "/img/bumper.png",
-    "/img/grass.png",
-    "/img/ice.png",
-    "/img/lava.png",
-    "/img/magnet.png",
-    "/img/red-portal.png",
-    "/img/sand.png",
-    "/img/water.png",
-    "/img/yellow-portal.png"
-]
+["/img/acid.png","/img/blue-portal.png","/img/brick.png","/img/bumper.png","/img/dark-sand.png","/img/grass.png","/img/ice.png","/img/lava.png","/img/magnet.png","/img/portal.png","/img/red-portal.png","/img/reverse-magnet.png","/img/sand.png","/img/tall-grass.png","/img/water.png","/img/yellow-portal.png"]

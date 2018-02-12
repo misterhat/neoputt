@@ -4,8 +4,10 @@
   "description": "multiplayer minigolf simulator",
   "main": "browser.js",
   "scripts": {
-    "clean": "rm build/*",
+    "build-assets": "node make-assets.js",
     "build-js": "browserify browser.js -o build/browser.bundle.js",
+    "build": "npm run build-assets && npm run build-js",
+    "clean": "rm build/*",
     "test": "node test"
   },
   "repository": {

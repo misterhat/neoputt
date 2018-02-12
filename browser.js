@@ -1,20 +1,21 @@
-const assets = require('./assets');
 const config = require('./config');
 const h = require('hyperscript');
-const preloader = require('preloader');
 const states = require('./lib/states');
 
 // TO ANGLE: * 180 / Math.PI
 
 class NeoPutt {
     constructor() {
+        this.fps  = config.fps;
+        this.isPaused = false;
+
         const width = (config.tileSize * config.width);
         const height = (config.tileSize * config.height);
 
         this.dom = h('.neoputt-wrap', {
             style: {
-                width: width + 'px',
-                height: height + 'px'
+                height: `${height}px`,
+                width: `${width}px`
             }
         });
 
@@ -33,22 +34,32 @@ class NeoPutt {
         this.state.start();
     }
 
+    pause(toggle) {
+        if (typeof toggle !== 'undefined') {
+            this.isPaused = !!toggle;
+            return;
+        }
+
+        if (this.isPaused) {
+            this.isPaused = false;
+            this.tick();
+        } else {
+            this.isPaused = true;
+        }
+    }
+
     tick() {
         this.state.tick();
         this.state.draw();
-        setTimeout(this.tickWrap, 1000 / config.fps);
+
+        if (!this.isPaused) {
+            setTimeout(this.tickWrap, 1000 / this.fps);
+        }
     }
 
     start() {
-        const loader = preloader({});
-        assets.forEach(loader.add.bind(loader));
-
-        loader.on('complete', () => {
-            this.setState('title');
-            this.tick();
-        });
-
-        loader.load();
+        this.setState('load');
+        this.tick();
     }
 }
 
@@ -56,17 +67,44 @@ const game = new NeoPutt();
 document.body.appendChild(game.dom);
 game.start();
 
+const hash = window.location.hash || '';
+
+if (hash !== '#debug') {
+    return;
+}
+
+const fps = h('input', {
+    min: 1,
+    style: { width: '64px' },
+    type: 'number',
+    value: 20
+});
+
+fps.addEventListener('change', () => {
+    game.fps = Number(fps.value) || 20;
+}, false);
+
+document.body.appendChild(fps);
+document.body.appendChild(h('span', ' '));
+
 const pause = h('button', 'pause');
+
 pause.addEventListener('click', () => {
     game.pause();
-});
+}, false);
+
 document.body.appendChild(pause);
 
 if (localStorage.getItem('neoputt-maps')) {
     const delMaps = h('button', 'delete maps');
+
     delMaps.addEventListener('click', () => {
-        localStorage.setItem('neoputt-maps', '');
-        window.location.reload(false);
+        if (confirm('sure?')) {
+            localStorage.setItem('neoputt-maps', '');
+            window.location.reload(false);
+        }
     }, false);
+
+    document.body.appendChild(h('span', ' '));
     document.body.appendChild(delMaps);
 }
