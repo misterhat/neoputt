@@ -73,9 +73,12 @@ if (hash !== '#debug') {
     return;
 }
 
+document.body.appendChild(h('hr'));
+
 const fps = h('input', {
     min: 1,
     style: { width: '64px' },
+    title: 'fps',
     type: 'number',
     value: 20
 });

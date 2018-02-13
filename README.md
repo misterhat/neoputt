@@ -1,12 +1,24 @@
 # neoputt
 a web-based multiplayer minigolf simulator.
 
-## credits
+## asset credits
+any unlisted assets (files under `./img/` and `./sound/` directories) were
+created by me and licensed under
+[CC0](https://creativecommons.org/publicdomain/zero/1.0/legalcode).
 
-* [`./img/acid.png` Sev - OpenClipArt](https://openclipart.org/detail/211412/splat)
-* [`./img/grass.png` Sharm - OpenGameArt](https://opengameart.org/content/tiny-16-basic)
-* [`./img/sand.png` Sharm - OpenGameArt](https://opengameart.org/content/tiny-16-basic)
-* [`./img/brick.png` SpiderDave - OpenGameArt](https://opengameart.org/content/bricks-tilable)
+* [`./img/acid.png` Sev - Splat](https://openclipart.org/detail/211412/splat) - CC0
+* [`./img/brick.png` SpiderDave - Bricks](https://opengameart.org/content/bricks-tilable) - CC0
+* [`./img/dark-sand.png` Sharm - Tiny 16: Basic](https://opengameart.org/content/tiny-16-basic) - CC-BY 3.0
+* [`./img/grass.png` Sharm - Tiny 16: Basic](https://opengameart.org/content/tiny-16-basic) - CC-BY 3.0
+* [`./img/sand.png` Sharm - Tiny 16: Basic](https://opengameart.org/content/tiny-16-basic) - CC-BY 3.0
+* [`./sound/acid.ogg` alienistcog - simmering-sauce.aif](https://freesound.org/people/alienistcog/sounds/124584/) - CC0
+* [`./sound/break.ogg` cejordi84 - Bricks.wav](https://freesound.org/people/cejordi84/sounds/232396/) - CC0
+* [`./sound/drive.ogg` zolopher - Golf 1.wav](https://freesound.org/people/zolopher/sounds/75203/) - CC0
+* [`./sound/hole.ogg` AGFX - Drop ball in cup-1.wav](https://freesound.org/people/AGFX/sounds/20428/) - CC-BY 3.0
+* [`./sound/lava.ogg` MrVasLuk - lava death](https://freesound.org/people/MrVasLuk/sounds/304619/) - CC0
+* [`./sound/magnet.ogg` Julien Nicolas - MAGNETIC](https://freesound.org/people/Julien%20Nicolas/sounds/133785/) - CC-BY 3.0
+* [`./sound/putt.ogg` 170129 - putt.wav](https://freesound.org/people/170129/sounds/408260/) - CC0
+* [`./sound/splash.ogg` kwahmah\_02 - Splash!](https://freesound.org/people/kwahmah_02/sounds/274254/) - CC-BY 3.0
 
 ## license
 Copyright (C) 2018 Mister Hat

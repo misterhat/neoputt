@@ -2,6 +2,7 @@
     "tileSize": 16,
     "width": 28,
     "height": 18,
+    "maxStrength": 8,
     "fps": 20,
     "turnTimeoutTicks": 500
 }
