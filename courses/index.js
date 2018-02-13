@@ -1,10 +1,10 @@
-const Map = require('../lib/map');
+const Course = require('../lib/course');
 
 const COURSES = [ require('./demo') ].map(c => {
     const name = c.name;
     delete c.name;
 
-    return new Map(name, c);
+    return new Course(name, c);
 });
 
 module.exports = COURSES;

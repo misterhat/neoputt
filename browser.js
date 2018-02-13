@@ -27,8 +27,7 @@ class NeoPutt {
             this.state.end();
         }
 
-        args.unshift(this);
-        args.unshift(null);
+        args.unshift(null, this);
 
         this.state = new (Function.prototype.bind.apply(states[state], args));
         this.state.start();

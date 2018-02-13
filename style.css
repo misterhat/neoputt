@@ -60,7 +60,7 @@ body {
 
 .neoputt-input {
     width: 128px;
-    height: 28px;
+    height: 26px;
 }
 
 .neoputt-small, .neoputt-map-name {
@@ -69,7 +69,7 @@ body {
                  1px 1px 0 #000;
 }
 
-.neoputt-field {
+.neoputt-field, .neoputt-map {
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
 }
@@ -94,7 +94,7 @@ body {
     padding: 0 4px 0 4px;
     position: relative;
     text-align: center;
-    transition: linear transform 0.1s;
+    transition: linear transform 0.05s;
 }
 
 .neoputt-map:hover {
@@ -110,7 +110,7 @@ body {
 }
 
 .neoputt-map-del {
-    bottom: 8px;
+    bottom: 12px;
     line-height: 16px;
     position: absolute;
     right: 8px;
