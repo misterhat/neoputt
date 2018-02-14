@@ -15,6 +15,10 @@ body {
     position: relative;
     text-align: center;
     user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .neoputt-header {
@@ -64,9 +68,10 @@ body {
 }
 
 .neoputt-small, .neoputt-map-name {
+    -webkit-text-stroke: 0.7px #000;
     color: #fff;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-                 1px 1px 0 #000;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .neoputt-field, .neoputt-map {
