@@ -3,7 +3,6 @@ body {
 }
 
 .neoputt-wrap {
-    transition: background-image 0.3s;
     -moz-user-select: none;
     -webkit-user-select: none;
     background-position: center 8px;
@@ -15,10 +14,6 @@ body {
     position: relative;
     text-align: center;
     user-select: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .neoputt-header {
@@ -68,10 +63,11 @@ body {
 }
 
 .neoputt-small, .neoputt-map-name {
-    -webkit-text-stroke: 0.7px #000;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+                 1px 1px 0 #000;
 }
 
 .neoputt-field, .neoputt-map {
@@ -99,7 +95,7 @@ body {
     padding: 0 4px 0 4px;
     position: relative;
     text-align: center;
-    transition: linear transform 0.05s;
+    transition: linear transform 0.1s;
 }
 
 .neoputt-map:hover {
