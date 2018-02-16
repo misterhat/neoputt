@@ -28,6 +28,7 @@
     "test": "node test"
   },
   "dependencies": {
+    "bresenham": "0.0.4",
     "clone": "^2.1.1",
     "csrf": "^3.0.6",
     "deep-equal": "^1.0.1",

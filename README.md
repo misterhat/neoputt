@@ -25,12 +25,13 @@ created by me and licensed under
 * [`./img/dark-sand.png` Sharm - Tiny 16: Basic](https://opengameart.org/content/tiny-16-basic) - CC-BY 3.0
 * [`./img/grass.png` Sharm - Tiny 16: Basic](https://opengameart.org/content/tiny-16-basic) - CC-BY 3.0
 * [`./img/sand.png` Sharm - Tiny 16: Basic](https://opengameart.org/content/tiny-16-basic) - CC-BY 3.0
-* [`./sound/acid.ogg` alienistcog - simmering-sauce.aif](https://freesound.org/people/alienistcog/sounds/124584/) - CC0
-* [`./sound/bumper.ogg` plingativator - jawharp\_boing.wav](https://freesound.org/people/plingativator/sounds/188869/) - CC-BY 3.0
+* [`./sound/acid.ogg` bottles - Acid Burn](https://freesound.org/people/bottles/sounds/382313/) - CC0
 * [`./sound/break.ogg` cejordi84 - Bricks.wav](https://freesound.org/people/cejordi84/sounds/232396/) - CC0
+* [`./sound/bumper.ogg` plingativator - jawharp\_boing.wav](https://freesound.org/people/plingativator/sounds/188869/) - CC-BY 3.0
 * [`./sound/drive.ogg` zolopher - Golf 1.wav](https://freesound.org/people/zolopher/sounds/75203/) - CC0
 * [`./sound/hole.ogg` AGFX - Drop ball in cup-1.wav](https://freesound.org/people/AGFX/sounds/20428/) - CC-BY 3.0
-* [`./sound/lava.ogg` MrVasLuk - lava death](https://freesound.org/people/MrVasLuk/sounds/304619/) - CC0
+* [`./sound/ice.ogg` o1sound - rockonice.wav](https://freesound.org/people/o1sound/sounds/137078/) - CC-BY 3.0
+* [`./sound/lava.ogg` alienistcog - simmering-sauce.aif](https://freesound.org/people/alienistcog/sounds/124584/) - CC0
 * [`./sound/magnet.ogg` Julien Nicolas - MAGNETIC](https://freesound.org/people/Julien%20Nicolas/sounds/133785/) - CC-BY 3.0
 * [`./sound/putt.ogg` 170129 - putt.wav](https://freesound.org/people/170129/sounds/408260/) - CC0
 * [`./sound/splash.ogg` kwahmah\_02 - Splash!](https://freesound.org/people/kwahmah_02/sounds/274254/) - CC-BY 3.0

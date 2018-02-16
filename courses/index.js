@@ -1,6 +1,6 @@
 const Course = require('../lib/course');
 
-const COURSES = [ require('./demo') ].map(c => {
+const COURSES = [ require('./demo'), require('./ice') ].map(c => {
     const name = c.name;
     delete c.name;
 
