@@ -155,16 +155,19 @@ body {
     float: right;
     height: 100%;
     overflow-y: scroll;
+    padding: 4px 0 -4px 0;
     text-align: center;
 }
 
 .neoputt-tile {
+    background-position: center center;
+    background-repeat: no-repeat;
     display: inline-block;
     image-rendering: -moz-crisp-edges;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: optimizeSpeed;
     image-rendering: pixelated;
-    margin: 4px;
+    margin: 6px;
 }
 
 .neoputt-tile:hover, .neoputt-tile-f {

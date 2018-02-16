@@ -2,30 +2,31 @@
   "name": "neoputt",
   "version": "1.0.0",
   "description": "multiplayer minigolf simulator",
-  "main": "browser.js",
-  "scripts": {
-    "build-assets": "node make-assets.js",
-    "build-js": "browserify browser.js -o build/browser.bundle.js",
-    "build": "npm run build-assets && npm run build-js",
-    "clean": "rm build/*",
-    "test": "node test"
+  "keywords": [
+    "golf",
+    "mini",
+    "minigolf",
+    "putt"
+  ],
+  "homepage": "https://github.com/misterhat/neoputt#readme",
+  "bugs": {
+    "url": "https://github.com/misterhat/neoputt/issues"
   },
+  "license": "AGPL-3.0+",
+  "author": "Mister Hat <misterhat144@gmail.com>",
+  "main": "browser.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/misterhat/neoputt.git"
   },
-  "keywords": [
-    "mini",
-    "golf",
-    "putt",
-    "minigolf"
-  ],
-  "author": "Mister Hat <misterhat144@gmail.com>",
-  "license": "AGPL-3.0+",
-  "bugs": {
-    "url": "https://github.com/misterhat/neoputt/issues"
+  "scripts": {
+    "build": "npm run build-assets && npm run build-js",
+    "build-assets": "node make-assets.js",
+    "build-js": "browserify browser.js -o build/browser.bundle.js",
+    "clean": "rm build/*",
+    "start": "node app",
+    "test": "node test"
   },
-  "homepage": "https://github.com/misterhat/neoputt#readme",
   "dependencies": {
     "clone": "^2.1.1",
     "csrf": "^3.0.6",
