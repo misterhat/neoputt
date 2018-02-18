@@ -28,12 +28,14 @@ created by me and licensed under
 * [`./sound/acid.ogg` bottles - Acid Burn](https://freesound.org/people/bottles/sounds/382313/) - CC0
 * [`./sound/break.ogg` cejordi84 - Bricks.wav](https://freesound.org/people/cejordi84/sounds/232396/) - CC0
 * [`./sound/bumper.ogg` plingativator - jawharp\_boing.wav](https://freesound.org/people/plingativator/sounds/188869/) - CC-BY 3.0
+* [`./sound/crumple.ogg` j1987 - crumple.wav](https://freesound.org/people/j1987/sounds/106127/) - CC0
 * [`./sound/drive.ogg` zolopher - Golf 1.wav](https://freesound.org/people/zolopher/sounds/75203/) - CC0
 * [`./sound/hole.ogg` AGFX - Drop ball in cup-1.wav](https://freesound.org/people/AGFX/sounds/20428/) - CC-BY 3.0
 * [`./sound/ice.ogg` o1sound - rockonice.wav](https://freesound.org/people/o1sound/sounds/137078/) - CC-BY 3.0
 * [`./sound/lava.ogg` alienistcog - simmering-sauce.aif](https://freesound.org/people/alienistcog/sounds/124584/) - CC0
 * [`./sound/magnet.ogg` Julien Nicolas - MAGNETIC](https://freesound.org/people/Julien%20Nicolas/sounds/133785/) - CC-BY 3.0
 * [`./sound/putt.ogg` 170129 - putt.wav](https://freesound.org/people/170129/sounds/408260/) - CC0
+* [`./sound/sand.ogg` mwmarsh - sand falling on paper.aiff](https://freesound.org/people/mwmarsh/sounds/85932/) - CC-Sampling+
 * [`./sound/splash.ogg` kwahmah\_02 - Splash!](https://freesound.org/people/kwahmah_02/sounds/274254/) - CC-BY 3.0
 * [`./sound/tap*.ogg` mkoenig - Golf Ball.wav](https://freesound.org/people/mkoenig/sounds/81172/) - CC-BY 3.0
 * [`./sound/teleport.ogg` Sergenious - port.wav](https://freesound.org/people/Sergenious/sounds/55843/) - CC-BY 3.0

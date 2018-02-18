@@ -22,26 +22,33 @@
   "scripts": {
     "build": "npm run build-assets && npm run build-js",
     "build-assets": "node make-assets.js",
+    "build-db": "rm neoputt.sqlite3 && knex migrate:latest",
     "build-js": "browserify browser.js -o build/browser.bundle.js",
-    "clean": "rm build/*",
-    "start": "node app",
+    "start": "node app | bunyan",
     "test": "node test"
   },
   "dependencies": {
+    "body-parser": "^1.18.2",
     "bresenham": "0.0.4",
+    "bunyan": "^1.8.12",
+    "client-sessions": "^0.8.0",
     "clone": "^2.1.1",
+    "common-words": "^0.1.3",
     "csrf": "^3.0.6",
     "deep-equal": "^1.0.1",
     "ecstatic": "^3.2.0",
     "hyperscript": "^2.0.2",
-    "knex": "^0.14.2",
+    "knex": "^0.14.3",
     "lzwcompress": "^0.2.4",
     "n-dimensional-flood-fill": "^1.0.0",
     "node-emoji": "^1.8.1",
     "object-hash": "^1.2.0",
     "preloader": "^4.0.2",
     "sat": "^0.6.0",
-    "tcp-bind": "^1.2.0"
+    "server-router": "^6.0.0",
+    "sqlite3": "^3.1.13",
+    "tcp-bind": "^1.2.0",
+    "xhr": "^2.4.1"
   },
   "devDependencies": {
     "browserify": "^15.2.0"

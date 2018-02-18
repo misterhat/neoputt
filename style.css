@@ -108,6 +108,8 @@ body {
     display: inline-block;
     line-height: normal;
     vertical-align: middle;
+    width: inherit;
+    word-wrap: break-word;
 }
 
 .neoputt-map-del {

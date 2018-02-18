@@ -1,8 +1,9 @@
 {
-    "tileSize": 16,
-    "width": 28,
-    "height": 18,
-    "maxStrength": 8,
     "fps": 20,
-    "turnTimeoutTicks": 300
+    "height": 18,
+    "maxNameLength": 30,
+    "maxStrength": 8,
+    "tileSize": 16,
+    "turnTimeoutTicks": 300,
+    "width": 28
 }
