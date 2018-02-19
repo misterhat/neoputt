@@ -19,6 +19,7 @@ body {
 .neoputt-header {
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
                  1px 1px 0 #fff;
+    z-index: 9999;
 }
 
 .neoputt-button, .neoputt-input {
