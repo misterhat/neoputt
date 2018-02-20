@@ -17,8 +17,9 @@ body {
 }
 
 .neoputt-header {
+    margin: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-                 1px 1px 0 #fff;
+        1px 1px 0 #fff;
     z-index: 9999;
 }
 
@@ -46,7 +47,7 @@ body {
     z-index: 9998;
 }
 
-.neoputt-button:hover, .neoputt-tile:hover {
+.neoputt-button:hover, .neoputt-button:focus, .neoputt-tile:hover {
     transform: scale(1.1);
 }
 
@@ -187,4 +188,12 @@ body {
 
 .neoputt-clear {
     clear: both;
+}
+
+.neoputt-link {
+    color: #fff;
+}
+
+.neoputt-link:hover, .neoputt-link:focus {
+    font-size: 14px;
 }

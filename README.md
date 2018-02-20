@@ -41,7 +41,7 @@ created by me and licensed under
 * [`./sound/teleport.ogg` Sergenious - port.wav](https://freesound.org/people/Sergenious/sounds/55843/) - CC-BY 3.0
 
 ## license
-Copyright (C) 2018 Mister Hat
+Copyright (C) 2018  Zorian Medwid
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as

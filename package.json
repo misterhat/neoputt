@@ -13,7 +13,7 @@
     "url": "https://github.com/misterhat/neoputt/issues"
   },
   "license": "AGPL-3.0+",
-  "author": "Mister Hat <misterhat144@gmail.com>",
+  "author": "Zorian Medwid <misterhat144@gmail.com>",
   "main": "browser.js",
   "repository": {
     "type": "git",
@@ -46,6 +46,7 @@
     "preloader": "^4.0.2",
     "sat": "^0.6.0",
     "server-router": "^6.0.0",
+    "spliddit": "^2.1.1",
     "sqlite3": "^3.1.13",
     "tcp-bind": "^1.2.0",
     "xhr": "^2.4.1"

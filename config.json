@@ -1,4 +1,5 @@
 {
+    "coursePostThrottle": 60,
     "fps": 20,
     "height": 18,
     "maxNameLength": 30,

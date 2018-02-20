@@ -52,6 +52,11 @@ function route(req, res) {
 }
 
 const server = http.createServer((req, res) => {
+    // https://www.owasp.org/index.php/OWASP_Secure_Headers_Project
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('X-Frame-Options', 'DENY');
+    res.setHeader('X-XSS-Protection', '1');
+
     staticServe(req, res, () => {
         session(req, res, () => {
             res.statusCode = 200;
