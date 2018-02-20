@@ -48,8 +48,8 @@ class NeoPutt {
     }
 
     tick() {
-        this.state.tick();
         this.state.draw();
+        this.state.tick();
 
         if (!this.isPaused) {
             setTimeout(this.tickWrap, 1000 / this.fps);
