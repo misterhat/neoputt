@@ -2,6 +2,7 @@
     "coursePostThrottle": 60,
     "fps": 20,
     "height": 18,
+    "maxActions": 50,
     "maxNameLength": 30,
     "maxStrength": 8,
     "tileSize": 16,
