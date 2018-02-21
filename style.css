@@ -197,3 +197,19 @@ body {
 .neoputt-link:hover, .neoputt-link:focus {
     font-size: 14px;
 }
+
+.neoputt-table-wrap {
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow-y: scroll;
+    margin: 4px;
+}
+
+.neoputt-table {
+    width: 100%;
+}
+
+.neoputt-table tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+

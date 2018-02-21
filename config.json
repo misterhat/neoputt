@@ -3,10 +3,13 @@
     "fps": 20,
     "height": 18,
     "maxActions": 50,
+    "maxLobbyUsers": 10,
     "maxNameLength": 30,
     "maxSearchCourses": 10,
     "maxStrength": 8,
+    "maxTurnLimit": 300,
     "tileSize": 16,
+    "turnLimit": 60,
     "turnTimeoutTicks": 300,
     "width": 28
 }

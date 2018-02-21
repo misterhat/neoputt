@@ -19,11 +19,31 @@ exports.up = (knex, Promise) => {
         }),
         knex.schema.createTable('neoputt_course_reactions', table => {
             table.increments('id').unsigned().primary();
-            table.integer('course_id').unsigned().references('id').
-                inTable('neoputt_courses').index();
+            table.integer('course_id').unsigned().references('id')
+                .inTable('neoputt_courses').index();
             table.string('ip').notNull();
             table.timestamp('when').notNull().defaultTo(knex.fn.now());
             table.tinyint('reaction').unsigned();
+        }),
+        knex.schema.createTable('neoputt_lobbies', table => {
+            table.increments('id').unsigned().primary();
+            table.boolean('ball_hit').defaultTo(true);
+            table.boolean('private').defaultTo(false);
+            table.integer('max_users').notNull().defaultTo(
+                config.maxLobbyUsers);
+            table.integer('turn_limit').notNull()defaultTo(config.turnLimit);
+            table.string('country', 2);
+            table.string('ip').unique().notNull();
+            table.string('peer_id').notNull();
+            table.string('name', config.maxNameLength).notNull();
+        }),
+        knex.schema.createTable('neoputt_lobby_courses', table => {
+            table.increments('id').unsigned().primary();
+            table.integer('course_id').unsigned().references('id')
+                .inTable('neoputt_courses').index();
+            table.string('course_name', config.maxNameLength).notNull();
+            table.integer('lobby_id').unsigned().references('id')
+                .inTable('neoputt_lobbies').index();
         })
     ]);
 };
