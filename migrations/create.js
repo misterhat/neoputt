@@ -9,7 +9,6 @@ exports.up = (knex, Promise) => {
             table.integer('dislikes').notNull().defaultTo(0);
             table.integer('likes').notNull().defaultTo(0);
             table.json('course').notNull();
-            //table.json('win_shots').notNull();
             table.string('entity_hash', 40).notNull();
             table.string('ip').notNull();
             table.string('name', config.maxNameLength).unique().notNull();

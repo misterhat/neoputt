@@ -4,6 +4,7 @@
     "height": 18,
     "maxActions": 50,
     "maxNameLength": 30,
+    "maxSearchCourses": 10,
     "maxStrength": 8,
     "tileSize": 16,
     "turnTimeoutTicks": 300,
