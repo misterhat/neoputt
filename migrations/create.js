@@ -34,7 +34,7 @@ exports.up = (knex, Promise) => {
                 config.maxLobbyUsers);
             table.integer('users').notNull().defaultTo(1);
             table.string('country', 2);
-            table.string('ip').unique().notNull();
+            table.string('ip').unique().notNull().index();
             table.string('name', config.maxNameLength).notNull();
             table.string('peer_signal').notNull();
             table.timestamp('created').notNull().defaultTo(knex.fn.now());
