@@ -32,10 +32,11 @@ exports.up = (knex, Promise) => {
             table.integer('turn_limit').notNull().defaultTo(config.turnLimit);
             table.integer('user_limit').notNull().defaultTo(
                 config.maxLobbyUsers);
+            table.integer('users').notNull().defaultTo(1);
             table.string('country', 2);
             table.string('ip').unique().notNull();
             table.string('name', config.maxNameLength).notNull();
-            table.string('peer_id').notNull();
+            table.string('peer_signal').notNull();
             table.timestamp('created').notNull().defaultTo(knex.fn.now());
         }),
         knex.schema.createTable('neoputt_lobby_courses', table => {
