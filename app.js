@@ -38,7 +38,7 @@ const router = getRouter(db, tokens, log).start();
 
 if (IS_DEV) {
     db.on('query', query => {
-        log.info('query:', query.sql, query.bindings);
+        log.info('query:', query.sql, query.bindings || '');
     });
 }
 

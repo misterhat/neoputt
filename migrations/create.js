@@ -28,19 +28,18 @@ exports.up = (knex, Promise) => {
         knex.schema.createTable('neoputt_lobbies', table => {
             table.increments('id').unsigned().primary();
             table.boolean('ball_hit').defaultTo(true);
-            table.boolean('private').defaultTo(false);
-            table.integer('max_users').notNull().defaultTo(
+            table.boolean('hide').defaultTo(false);
+            table.integer('turn_limit').notNull().defaultTo(config.turnLimit);
+            table.integer('user_limit').notNull().defaultTo(
                 config.maxLobbyUsers);
-            table.integer('turn_limit').notNull()defaultTo(config.turnLimit);
             table.string('country', 2);
             table.string('ip').unique().notNull();
-            table.string('peer_id').notNull();
             table.string('name', config.maxNameLength).notNull();
+            table.string('peer_id').notNull();
+            table.timestamp('created').notNull().defaultTo(knex.fn.now());
         }),
         knex.schema.createTable('neoputt_lobby_courses', table => {
             table.increments('id').unsigned().primary();
-            table.integer('course_id').unsigned().references('id')
-                .inTable('neoputt_courses').index();
             table.string('course_name', config.maxNameLength).notNull();
             table.integer('lobby_id').unsigned().references('id')
                 .inTable('neoputt_lobbies').index();
@@ -50,7 +49,9 @@ exports.up = (knex, Promise) => {
 
 exports.down = function (knex, Promise) {
     return Promise.all([
+        knex.schema.dropTableIfExists('neoputt_course_reactions'),
         knex.schema.dropTableIfExists('neoputt_courses'),
-        knex.schema.dropTableIfExists('neoputt_course_ratings')
+        knex.schema.dropTableIfExists('neoputt_lobbies'),
+        knex.schema.dropTableIfExists('neoputt_lobby_courses')
     ]);
 };

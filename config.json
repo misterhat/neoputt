@@ -8,6 +8,7 @@
     "maxSearchCourses": 10,
     "maxStrength": 8,
     "maxTurnLimit": 300,
+    "minTurnLimit": 5,
     "tileSize": 16,
     "turnLimit": 60,
     "turnTimeoutTicks": 300,
