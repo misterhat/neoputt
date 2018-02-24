@@ -225,3 +225,8 @@ body {
 .neoputt-form-input {
     margin: 4px;
 }
+
+.neoputt-chat-input {
+    left: 0;
+    position: absolute;
+}
