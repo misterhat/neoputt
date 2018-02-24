@@ -1,7 +1,11 @@
 const Course = require('../lib/course');
 
-const COURSES = [ require('./demo'), require('./ice') ].map(course => {
-    return new Course(course);
-});
+const courses = {
+    'demo': require('./demo'),
+    'ice': require('./ice')
+};
 
-module.exports = COURSES;
+Object.keys(courses).forEach(name => courses[name] = new Course(courses[name]));
+
+module.exports = courses;
+module.exports.order = [ courses.demo, courses.ice ];

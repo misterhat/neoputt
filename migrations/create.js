@@ -33,17 +33,12 @@ exports.up = (knex, Promise) => {
             table.integer('user_limit').notNull().defaultTo(
                 config.maxLobbyUsers);
             table.integer('users').notNull().defaultTo(1);
+            table.json('courses').notNull();
             table.string('country', 2);
             table.string('ip').unique().notNull().index();
             table.string('name', config.maxNameLength).notNull();
             table.string('peer_signal').notNull();
             table.timestamp('created').notNull().defaultTo(knex.fn.now());
-        }),
-        knex.schema.createTable('neoputt_lobby_courses', table => {
-            table.increments('id').unsigned().primary();
-            table.string('course_name', config.maxNameLength).notNull();
-            table.integer('lobby_id').unsigned().references('id')
-                .inTable('neoputt_lobbies').index();
         })
     ]);
 };
@@ -52,7 +47,6 @@ exports.down = function (knex, Promise) {
     return Promise.all([
         knex.schema.dropTableIfExists('neoputt_course_reactions'),
         knex.schema.dropTableIfExists('neoputt_courses'),
-        knex.schema.dropTableIfExists('neoputt_lobbies'),
-        knex.schema.dropTableIfExists('neoputt_lobby_courses')
+        knex.schema.dropTableIfExists('neoputt_lobbies')
     ]);
 };
