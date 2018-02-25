@@ -37,8 +37,17 @@ exports.up = (knex, Promise) => {
             table.string('country', 2);
             table.string('ip').unique().notNull().index();
             table.string('name', config.maxNameLength).notNull();
-            table.string('peer_signal').notNull();
             table.timestamp('created').notNull().defaultTo(knex.fn.now());
+        }),
+        knex.schema.createTable('neoputt_peer_signals', table => {
+            table.increments('id').unsigned().primary();
+            table.integer('lobby_id').unsigned().references('id')
+                .inTable('neoputt_lobbies').index();
+            table.string('offer_hash', 40).notNull().index();
+            table.json('offer').notNull();
+            table.json('offer_candidates');
+            table.json('answer');
+            table.json('answer_candidates');
         })
     ]);
 };
