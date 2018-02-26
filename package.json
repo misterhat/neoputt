@@ -23,7 +23,7 @@
     "build": "npm run build-assets && npm run build-js",
     "build-assets": "node make-assets.js",
     "build-db": "rm neoputt.sqlite3 && knex migrate:latest",
-    "build-js": "browserify browser.js -o build/browser.bundle.js",
+    "build-js": "browserify browser.js -o assets/build/browser.bundle.js",
     "start": "node app | bunyan",
     "test": "node test"
   },

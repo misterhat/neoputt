@@ -43,11 +43,11 @@ exports.up = (knex, Promise) => {
             table.increments('id').unsigned().primary();
             table.integer('lobby_id').unsigned().references('id')
                 .inTable('neoputt_lobbies').index();
-            table.string('offer_hash', 40).notNull().index();
-            table.json('offer').notNull();
-            table.json('offer_candidates');
             table.json('answer');
             table.json('answer_candidates');
+            table.json('offer').notNull();
+            table.json('offer_candidates');
+            table.string('offer_hash', 40).notNull().index();
         })
     ]);
 };

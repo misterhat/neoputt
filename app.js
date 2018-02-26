@@ -24,7 +24,7 @@ const staticServe = ecstatic({
   cache: (IS_DEV ? 0 : ONE_YEAR),
   gzip: false,
   handleError: false,
-  root: __dirname + '/',
+  root: __dirname + '/assets',
   serverHeader: false,
   showDir: false
 });
