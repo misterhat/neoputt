@@ -44,10 +44,9 @@ exports.up = (knex, Promise) => {
             table.integer('lobby_id').unsigned().references('id')
                 .inTable('neoputt_lobbies').index();
             table.json('answer');
-            table.json('answer_candidates');
             table.json('offer').notNull();
-            table.json('offer_candidates');
             table.string('offer_hash', 40).notNull().index();
+            table.timestamp('created').notNull().defaultTo(knex.fn.now());
         })
     ]);
 };

@@ -17,7 +17,7 @@ body {
 }
 
 .neoputt-header {
-    margin: 0;
+    margin: 2px;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
         1px 1px 0 #fff;
     z-index: 9999;
