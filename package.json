@@ -46,6 +46,7 @@
     "preloader": "^4.0.2",
     "sat": "^0.6.0",
     "server-router": "^6.0.0",
+    "sillyname": "^0.1.0",
     "simple-peer": "^9.0.0",
     "spliddit": "^2.1.1",
     "sqlite3": "^3.1.13",

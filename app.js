@@ -46,8 +46,13 @@ function route(req, res) {
     try {
         router(req, res);
     } catch (e) {
-        res.statusCode = 404;
-        sendBody.json(req, res, 'not found');
+        if (/did not match$/.test(e.message)) {
+            sendBody.notFound(req, res);
+            return;
+        }
+
+        log.error(sumReq(req), e);
+        sendBody.error(req, res);
     }
 }
 
