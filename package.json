@@ -44,6 +44,7 @@
     "node-emoji": "^1.8.1",
     "object-hash": "^1.2.0",
     "preloader": "^4.0.2",
+    "rcolor": "^1.0.1",
     "sat": "^0.6.0",
     "server-router": "^6.0.0",
     "sillyname": "^0.1.0",
