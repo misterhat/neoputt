@@ -20,7 +20,8 @@
     "url": "git+https://github.com/misterhat/neoputt.git"
   },
   "scripts": {
-    "build": "npm run build-assets && npm run build-js",
+    "clean": "rm assets/build/* assets.json neoputt.sqlite3",
+    "build": "npm run build-assets && npm run build-db && npm run build-js",
     "build-assets": "node make-assets.js",
     "build-db": "rm neoputt.sqlite3 && knex migrate:latest",
     "build-js": "browserify browser.js -o assets/build/browser.bundle.js",

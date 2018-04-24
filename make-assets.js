@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 const fs = require('fs');
 
 const images = fs.readdirSync('./assets/img/').map(f => `/img/${f}`);
