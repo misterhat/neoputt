@@ -3,7 +3,14 @@ a web-based multiplayer minigolf simulator.
 
 ## screenshots
 
-    TODO
+   <img src="./doc/title.png" alt="title screen screenshot">
+
+   <img src="./doc/gameplay.png" alt="gameplay screenshot">
+
+   <img src="./doc/course-editor.png" alt="course editor screenshot">
+
+   <img src="./doc/lobby.png" alt="online lobby screenshot">
+
 
 ## installation
 
