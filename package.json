@@ -36,7 +36,7 @@
     "clone": "^2.1.1",
     "csrf": "^3.0.6",
     "deep-equal": "^1.0.1",
-    "ecstatic": "^3.2.0",
+    "ecstatic": "^3.3.2",
     "geoip-lite": "^1.2.1",
     "hyperscript": "^2.0.2",
     "knex": "^0.14.3",
