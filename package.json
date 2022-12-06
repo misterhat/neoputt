@@ -29,7 +29,7 @@
     "test": "node test"
   },
   "dependencies": {
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.20.1",
     "bresenham": "0.0.4",
     "bunyan": "^1.8.12",
     "client-sessions": "^0.8.0",
