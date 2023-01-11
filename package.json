@@ -39,7 +39,7 @@
     "ecstatic": "^3.2.0",
     "geoip-lite": "^1.2.1",
     "hyperscript": "^2.0.2",
-    "knex": "^0.14.3",
+    "knex": "^2.4.0",
     "lzwcompress": "^0.2.4",
     "n-dimensional-flood-fill": "^1.0.0",
     "node-emoji": "^1.8.1",
